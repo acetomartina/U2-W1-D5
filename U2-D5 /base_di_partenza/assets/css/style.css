@@ -4,11 +4,9 @@ body {
   color: #242424;
 }
 
-,
 main {
   margin: 0;
 }
-/* TOP BAR CON LOGO E NAV BAR */
 
 .topBar {
   background-color: #ffc115;
@@ -57,7 +55,6 @@ main {
   font-size: 14px;
   cursor: pointer;
 }
-/* CENTRO DELL'HEADER */
 
 .mainTopBar {
   display: flex;
@@ -186,10 +183,9 @@ main {
   font-size: 12px;
 }
 
-.trending-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px 38px;
+.trendingGrid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .trend-item {
@@ -246,6 +242,12 @@ main {
   grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
   gap: 56px;
   align-items: start;
+}
+
+.post img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
 }
 
 .post-list {

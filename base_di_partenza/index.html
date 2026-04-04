@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+
+    <title>Desktop Mockup</title>
   </head>
 
   <body>
-    <header class="topBar">
-      <div class="topBarContainer">
-        <img class="logo" src="./assets/imgs/svg/logo.svg" alt="logo" />
-        <nav class="navBar">
-          <a href="#">Our story</a>
+    <header>
+      <div class="header-top">
+        <img class="logo" src="./assets/imgs/svg/logo.svg" />
+        <nav class="flex">
+          <a href="#">Our Story</a>
           <a href="#">Membership</a>
           <a href="#">Write</a>
-          <a href="#">Sign In</a>
-          <span> <a href="#" class="buttonGetStarted">Get started</a> </span>
+          <a href="#">Sign in</a>
+          <a href="#" id="get-started-btn" class="flex">Get started</a>
         </nav>
       </div>
-      <!-- ARTWORK con "M" ripetute -->
-      <section class="mainTopBar">
-        <div class="topBarTitle">
-          <h1>Stay curious.</h1>
-          <p>
-            Discover stories, thinking, and expertise from writers on any topic.
-          </p>
-          <a href="#" class="btnStartReading">Start reading</a>
+      <div class="header-main">
+        <div class="header-main-left">
+          <h1>Stay Curious.</h1>
+          <span
+            ><p>
+              Discover Stories, thinking, and expertise from writers on any
+              topic.
+            </p></span
+          >
+          <a class="flex" href="#">Start reading</a>
         </div>
-        <div id="lettersM">
+
+        <!-- ARTWORK con "M" ripetute -->
+        <div class="m-letters">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 585 462"
@@ -9235,182 +9240,359 @@
             </g>
           </svg>
         </div>
-      </section>
+      </div>
     </header>
     <main>
       <section class="trending">
-        <div class="container">
-          <div class="section-title">
-            <span class="dot">↗</span>
-            <span>Trending on Medium</span>
-          </div>
-
-          <div class="trending-grid">
-            <article class="trend-item">
-              <div class="trend-number">01</div>
-              <div>
-                <img src="./assets/imgs/image01.jpeg" />
-                <div class="meta-top">Tom Cooper</div>
-                <h3>Ukraine War, 23 October 2022</h3>
-                <div class="meta-bottom">Oct 23 · 5 min read</div>
-              </div>
-            </article>
-
-            <article class="trend-item">
-              <div class="trend-number">02</div>
-              <div>
-                <img src="./assets/imgs/image02.png" />
-                <div class="meta-top">
-                  Arthur Hayes in Entrepreneur's Handbook
+        <div class="trending-title">
+          <img src="./assets/imgs/svg/trending.svg" />
+          <h3>TRENDING ON MEDIUM</h3>
+        </div>
+        <div class="trending-container">
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">01</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image01.jpeg" alt="Tom Cooper" />
+                  <h4>Tom Cooper</h4>
                 </div>
-                <h3>Comeback</h3>
-                <div class="meta-bottom">Oct 26 · 24 min read</div>
+                <h2 class="trending-title-article">
+                  Ukraine War, 23 October 2022
+                </h2>
+                <div class="trending-details">Oct 23 · 5 min read</div>
               </div>
             </article>
-
-            <article class="trend-item">
-              <div class="trend-number">03</div>
-              <div>
-                <img src="./assets/imgs/image03.jpeg" />
-                <div class="meta-top">Erin A. Ross in Slackjaw</div>
-                <h3>
-                  How I Learned to Love My Breasts Even Though One Is A Horcrux
-                  For Voldemort
-                </h3>
-                <div class="meta-bottom">Oct 26 · 2 min read</div>
+          </a>
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">02</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image02.png" />
+                  <h4>Arthur Hayes in Entrepreneur's Handbook</h4>
+                </div>
+                <h2 class="trending-title-article">Comeback</h2>
+                <div class="trending-details">Oct 26 · 24 min red</div>
               </div>
             </article>
-
-            <article class="trend-item">
-              <div class="trend-number">04</div>
-              <div>
-                <img src="./assets/imgs/image04.png" />
-                <div class="meta-top">Frank Mastropolo in The Riff</div>
-                <h3>
+          </a>
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">03</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image03.jpeg" />
+                  <h4>Frank Mastropolo in The Riffk</h4>
+                </div>
+                <h2 class="trending-title-article">
                   The Night Paul McCartney Donned a Disguise at Fillmore East
-                </h3>
-                <div class="meta-bottom">Oct 22 · 3 min read</div>
+                </h2>
+                <div class="trending-details">Oct 22 · 3 min red</div>
               </div>
             </article>
-
-            <article class="trend-item">
-              <div class="trend-number">05</div>
-              <div>
-                <div class="meta-top">
-                  <img src="./assets/imgs/image05.jpeg" />
-                  Frank Andrade in Towards Data Science
+          </a>
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">04</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image04.png" />
+                  <h4>Frank Andrade in Towards Data Science</h4>
                 </div>
-                <h3>
+                <h2 class="trending-title-article">
+                  Ukraine War, 23 October 2022
+                </h2>
+                <div class="trending-details">
+                  Oct 23 · 5 min red
+                  <img src="./assets/imgs/svg/star.svg" />
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">05</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image05.jpeg" />
+                  <h4>Frank Andrade in Towards Data Science</h4>
+                </div>
+                <h2 class="trending-title-article">
                   5 Python Projects to Automate Your Life: From Beginner to
                   Advanced
-                </h3>
-                <div class="meta-bottom">Oct 13 · 6 min read</div>
-              </div>
-            </article>
-
-            <article class="trend-item">
-              <div class="trend-number">06</div>
-              <div>
-                <img src="./assets/imgs/image06.png" />
-                <div class="meta-top">
-                  Wesley Smits in JavaScript in Plain English
+                </h2>
+                <div class="trending-details">
+                  Oct 13 · 6 min red
+                  <img src="./assets/imgs/svg/star.svg" />
                 </div>
-                <h3>How To Make Visual Studio Code Look Amazing</h3>
-                <div class="meta-bottom">Oct 20 · 7 min read</div>
               </div>
             </article>
-          </div>
+          </a>
+          <a href="#" class="trending-link">
+            <article class="trending-article">
+              <div class="article-number">06</div>
+              <div class="article-body">
+                <div class="trending-body-top">
+                  <img src="./assets/imgs/image06.png" />
+                  <h4>Wesley Smits in JavaScript in Plain English</h4>
+                </div>
+                <h2 class="trending-title-article">
+                  How To Make Visual Studio Code Look Amazing
+                </h2>
+                <div class="trending-details">
+                  Oct 20 · 7 min red
+                  <img src="./assets/imgs/svg/star.svg" />
+                </div>
+              </div>
+            </article>
+          </a>
         </div>
       </section>
-      <div class="container main-grid">
-        <section class="post-list">
-          <article class="post">
-            <div class="post-text">
-              <div class="post-author">Robert Roy Britt</div>
-              <h2>How Old is Old?</h2>
-              <p class="post-desc">
-                What we consider “old” changes dramatically with age, and our
-                perspectives can be predictive of how well we age.
-              </p>
-              <div class="post-bottom">
-                Oct 27 · 5 min read <span class="tag">Aging</span>
-              </div>
-            </div>
-            <img src="./assets/imgs/image08.jpeg" />
-          </article>
+      <div class="post-box">
+        <section class="post-container">
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image07.jpeg"
+                  />
 
-          <article class="post">
-            <div class="post-text">
-              <div class="post-author">Taru Annila Liikanen</div>
-              <h2>Is Taylor Swift Allowed to Speak About Fat?</h2>
-              <p class="post-desc">
-                Can you speak about your trauma if you don't look traumatized?
-              </p>
-              <div class="post-bottom">
-                Oct 24 · 6 min read <span class="tag">Health</span>
+                  <h4>Robert Roy Britt</h4>
+                </div>
+                <h3>How Old is Old?</h3>
+                <p>
+                  What we consider “old” changes dramatically with age, and our
+                  perspectives can be predictive of how well we age
+                </p>
+                <div class="post-details">
+                  Oct 27 · 5 min read ·
+                  <div class="details-button">Aging</div>
+                  <img src="assets/imgs/svg/star.svg" />
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
               </div>
-            </div>
-            <img src="./assets/imgs/image09.jpeg" />
-          </article>
+              <div class="post-photo">
+                <img src="./assets/imgs/image08.jpeg" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image09.jpeg"
+                  />
+                  <h4>Taru Anniina Liikanen</h4>
+                </div>
+                <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+                <p>
+                  Can you speak about your trauma if you don't look traumatized?
+                </p>
+                <div class="post-details">
+                  Oct 24 · 6 min read ·
+                  <div class="details-button">Health</div>
+                  <img src="assets/imgs/svg/star.svg" />
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="./assets/imgs/image10.jpeg" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image11.jpeg"
+                  />
+                  <h4>David Rodenas, Ph. D.</h4>
+                </div>
+                <h3>Don’t Screw Up, You Will Be Found Guilty</h3>
+                <p>
+                  Software Engineer, yours is the right to produce high-quality
+                  work at all times, also the liability.
+                </p>
+                <div class="post-details">
+                  Oct 15 · 5 min read ·
+                  <div class="details-button">Software Engineering </div>
+                  <img src="assets/imgs/svg/star.svg" />
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="./assets/imgs/image12.png" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image13.png"
+                  />
+                  <h4>Microsoft Design</h4>
+                </div>
+                <h3>Leave No Trace</h3>
+                <p>
+                  How product designers can break from the status quo and help
+                  our planet
+                </p>
+                <div class="post-details">
+                  Oct 25 · 11 min read ·
+                  <div class="details-button">Sustainability</div>
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="./assets/imgs/image14.png" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image15.jpeg"
+                  />
+                  <h4>Scott H. Young</h4>
+                </div>
+                <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+                <p>
+                  Bruce Lee is reported to have said, “I fear not the man who
+                  has practiced 10,000 kicks once, but the man who has practiced
+                  one kick 10,000...
+                </p>
+                <div class="post-details">
+                  Oct 26 · 7 min read ·
+                  <div class="details-button">Learning</div>
+                  <img src="assets/imgs/svg/star.svg" />
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="./assets/imgs/image16.jpg" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image17.png"
+                  />
+                  <h4>Paul A. DeStefanoin Human Parts</h4>
+                </div>
+                <h3>What I Overheard as an Escape Room Actor</h3>
+                <p>
+                  Lock a group of people in a room and you’ll witness some
+                  surprising confessions
+                </p>
+                <div class="post-details">
+                  Jan 18, 2020 · 6 min read ·
+                  <div class="details-button">Experiences</div>
+                  <img src="assets/imgs/svg/star.svg" />
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="./assets/imgs/image18.jpeg" />
+              </div>
+            </article>
+          </a>
+          <a href="#" class="post-link">
+            <article class="post">
+              <div class="post-body">
+                <div class="trending-body-top">
+                  <img
+                    class="post-author-image"
+                    src="./assets/imgs/image19.jpeg"
+                  />
+                  <h4>Kim Scott</h4>
+                </div>
+                <h3>
+                  6 Steps for Setting Measurable Goals to Avoid “Productivity
+                  Paranoia”
+                </h3>
+                <p>
+                  With more people working in remote and hybrid environments
+                  than ever before, company, team and individual goals must be
+                  explicit and…
+                </p>
+                <div class="post-details">
+                  Oct 27 · 5 min read ·
+                  <div class="details-button">Productivity</div>
 
-          <article class="post">
-            <div class="post-text">
-              <div class="post-author">David Rodenas, Ph. D.</div>
-              <h2>Don’t Screw Up, You Will Be Found Guilty</h2>
-              <p class="post-desc">
-                Software Engineer, yours is the right to produce high-quality
-                work at all times, also the liability.
-              </p>
-              <div class="post-bottom">
-                Oct 15 · 5 min read
-                <span class="tag">Software Engineering</span>
+                  <div class="bookmark-icon">
+                    <img src="./assets/imgs/svg/bookmark.svg" />
+                  </div>
+                </div>
               </div>
-            </div>
-            <img src="./assets/imgs/image10.jpeg" />
-          </article>
-
-          <article class="post">
-            <div class="post-text">
-              <div class="post-author">Microsoft Design</div>
-              <h2>Leave No Trace</h2>
-              <p class="post-desc">
-                How product designers can break from the status quo and help our
-                planet.
-              </p>
-              <div class="post-bottom">
-                Oct 25 · 11 min read <span class="tag">Sustainability</span>
+              <div class="post-photo">
+                <img src="./assets/imgs/image20.jpg" />
               </div>
-            </div>
-            <img src="./assets/imgs/image11.jpeg" />
-          </article>
+            </article>
+          </a>
         </section>
-
-        <aside class="sidebar">
-          <h3>Discover more of what matters to you</h3>
-          <div class="sidebar-tags">
-            <a href="#">Programming</a>
-            <a href="#">Data Science</a>
-            <a href="#">Technology</a>
-            <a href="#">Self Improvement</a>
-            <a href="#">Writing</a>
-            <a href="#">Relationships</a>
-            <a href="#">Machine Learning</a>
-            <a href="#">Productivity</a>
-            <a href="#">Politics</a>
+        <section class="sidebar">
+          <div class="sidebar-title">
+            <h4>DISCOVER MORE OF WHAT MATTERS TO YOUR</h4>
           </div>
-
-          <div class="footer-links">
-            <a href="#">Help</a>
-            <a href="#">Status</a>
-            <a href="#">Writers</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">About</a>
-            <a href="#">Knowable</a>
+          <div class="sidebar-link">
+            <div class="sidebar-button">
+              <a href="#">Programming</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Data Science</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Technology</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Self Improvement</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Writing</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Relationships</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Machine Learning</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Productivity</a>
+            </div>
+            <div class="sidebar-button">
+              <a href="#">Politics</a>
+            </div>
           </div>
-        </aside>
+        </section>
       </div>
     </main>
   </body>

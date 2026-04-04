@@ -290,3 +290,21 @@ nav {
 .sidebar-title {
   padding: 1em;
 }
+
+.siderbar-line {
+  width: 100%;
+  margin: 1em;
+}
+
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 1em;
+}
+
+.link a {
+  flex-basis: 3.5em;
+  color: gray;
+  padding: 0.5em;
+}

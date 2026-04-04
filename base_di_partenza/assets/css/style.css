@@ -6,6 +6,10 @@ header {
   border-bottom: 1px solid black;
 }
 
+main {
+  isolation: isolate;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -21,12 +25,37 @@ header {
 
 /* HEADER */
 
+@keyframes changeColor {
+  0% {
+    background-color: #ffc115;
+  }
+  30% {
+    background-color: #ffc115;
+  }
+  60% {
+    background-color: #ffc115;
+  }
+
+  100% {
+    background-color: white;
+    border: transparent;
+  }
+}
+
 .header-top {
   border-bottom: 1px solid black;
+  background-color: #ffc115;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em;
+  position: sticky;
+  top: 0;
+
+  animation: changeColor linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0px 500px;
+  height: 1em;
 }
 
 nav {
@@ -51,6 +80,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  isolation: isolate;
 }
 
 .header-main-left {
@@ -307,4 +337,99 @@ nav {
   flex-basis: 3.5em;
   color: gray;
   padding: 0.5em;
+}
+/*STILI MOBILE*/
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 40em;
+  }
+  header {
+    max-width: 100%;
+    height: 30%;
+    background-color: #ffc115;
+    border-bottom: 1px solid black;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-main-left h1 {
+    font-size: 3.5em;
+
+    font-weight: 500;
+  }
+  .header-main-left p {
+    font-size: 1em;
+  }
+
+  .header-main-left a {
+    width: 7em;
+    font-size: 1em;
+  }
+
+  .header-main-left,
+  .trending-article,
+  .article-body {
+    max-width: 100%;
+  }
+  .trending-link {
+    width: 80%;
+    margin: 1em 0em;
+  }
+
+  .m-letters,
+  .no-mobile {
+    display: none;
+  }
+
+  #get-started-btn {
+    margin-right: 1em;
+  }
+
+  .trending {
+    height: 65em;
+    border-bottom: 1px solid rgb(136, 132, 132);
+  }
+  .trending-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-box {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .post-body {
+    width: 5em;
+  }
+
+  .sidebar-link {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .siderbar-line {
+    margin: 0;
+  }
+
+  .post {
+    width: 35em;
+    padding: 2em;
+  }
+
+  .post img {
+    padding-right: 2em;
+  }
+
+  .link {
+    width: 80%;
+  }
+
+  .post-details {
+    display: flex;
+    align-items: center;
+  }
 }

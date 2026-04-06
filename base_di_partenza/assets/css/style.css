@@ -338,9 +338,10 @@ nav {
   color: gray;
   padding: 0.5em;
 }
+
 /*STILI MOBILE*/
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 768px) {
   body {
     width: 40em;
   }
@@ -426,6 +427,10 @@ nav {
 
   .link {
     width: 80%;
+  }
+
+  .link a {
+    text-decoration: none;
   }
 
   .post-details {
